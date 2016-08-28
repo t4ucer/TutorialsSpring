@@ -17,6 +17,7 @@ public class HelloSpringApp {
 		
 		//let's call our new method for fortunes
 		System.out.println(theCoach.getDailyFortune());
+		
 		context.close();
 		
 	
