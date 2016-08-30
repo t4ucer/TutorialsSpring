@@ -2,6 +2,33 @@ package lkozlows.com;
 
 public class CricketCoach implements Coach {
 
+	private String emailAddress;
+	private String team;
+	
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("CricketCouch: inside set email method");
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("CricketCouch: inside set team method");
+		this.team = team;
+	}
+	
+	
+	
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+
+
+
 	private FortuneService fortuneService;
 
 	public CricketCoach(){
