@@ -1,15 +1,15 @@
 package lkozlows.com;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AnnotationDemoApp {
+public class JavaConfigDemoApp {
 
 	public static void main(String[] args) {
 
 		
-			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+			AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig.class);
 			Coach theCoach = context.getBean("tennisCoach", Coach.class);
 			System.out.println(theCoach.getDailyWorkout());
 			
